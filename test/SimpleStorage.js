@@ -6,6 +6,7 @@ contract('SimpleStorage', () => {
         const simpleStorage = await SimpleStorage.deployed();
         await simpleStorage.set('this');
         const result = await simpleStorage.get();
+        
         assert(result == 'this');
     });
 });
